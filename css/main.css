@@ -17,3 +17,21 @@ body {
     height: 170px;
     float: left;
 }
+#menu-nav {
+	display: block;
+	list-style-type: none;
+	margin: -10px;
+	padding: 0;
+}
+li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0
+	padding: 0;
+	width: 119px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+span {
+	color: white;
+}
