@@ -1,0 +1,19 @@
+body {
+	background: #504e51;
+}
+#page-wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+.logo {
+	display: block;
+    width: 260px;
+    height: 170px;
+    float: left;
+}
+.phone {
+	display: block;
+    width: 640px;
+    height: 170px;
+    float: left;
+}
