@@ -54,10 +54,40 @@ li a{
 span {
 	color: white;
 }
-#main {
+#white-section {
 	width: 588px;
 	background-color: #FFF;
-	float: left;
 	padding: 30px;
-	height: 800px;
+	margin: 0px;
+}
+.article{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top:10px;
+}
+.city_guilds.jpg {
+	padding-bottom: 205px;
+	width: 230px;
+	height: 151px;
+}
+.blurb{
+	border-bottom:solid 1px gray;
+	padding-left:5px;
+	margin-top: -26px;
+}
+.text {
+	width: 338px;
+    float: right;
+    padding: 0 0 0 20px;
+}
+h1 {
+	color: #7fc445;
+}
+h2 {
+	color: #7fc445;
+}
+h3 {
+	color: #7fc445;
 }
