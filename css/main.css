@@ -54,11 +54,13 @@ li a{
 span {
 	color: white;
 }
+.content{
+	display: flex;
+}
 #white-section {
 	width: 588px;
 	background-color: #FFF;
 	padding: 30px;
-	margin: 0px;
 }
 .article{
 	display:flex;
@@ -90,4 +92,13 @@ h2 {
 }
 h3 {
 	color: #7fc445;
+}
+#offers {
+	background-color: #CBC9CA;
+	color: #444444;
+	width: 212px;
+    padding: 0px 20px 20px 20px;
+}
+.specials {
+	border-bottom: 1px dotted #444444;
 }
