@@ -2,6 +2,9 @@ body {
 	background: #504e51;
 	font-family: Arial, sans-serif;
 }
+p {
+	font-size: 12px;
+}
 #page-wrapper {
 	width: 900px;
 	margin: 0 auto;
@@ -86,12 +89,17 @@ span {
 }
 h1 {
 	color: #7fc445;
+	font-size: 2em;
 }
 h2 {
 	color: #7fc445;
+	font-size: 1.5em;
 }
 h3 {
 	color: #7fc445;
+}
+h4 {
+	padding: 15px;
 }
 #offers {
 	background-color: #CBC9CA;
@@ -99,6 +107,16 @@ h3 {
 	width: 212px;
     padding: 0px 20px 20px 20px;
 }
-.specials {
-	border-bottom: 1px dotted #444444;
+#offers p {
+	 border-bottom: 1px dotted #444444;
+	 padding: 15px;
+}
+.specials p {
+	font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #EEEEEE;
+    padding: 10px 0 10px 0;
+    text-transform: uppercase;
+    text-indent: 0px;
 }
