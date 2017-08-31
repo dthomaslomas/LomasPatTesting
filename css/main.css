@@ -79,7 +79,7 @@ span {
 }
 .blurb{
 	border-bottom:solid 1px gray;
-	padding-left:5px;
+	padding-left:10px;
 	margin-top: -26px;
 }
 .text {
@@ -90,6 +90,7 @@ span {
 h1 {
 	color: #7fc445;
 	font-size: 2em;
+	line-height: 0.9em;
 }
 h2 {
 	color: #7fc445;
@@ -119,4 +120,6 @@ h4 {
     padding: 10px 0 10px 0;
     text-transform: uppercase;
     text-indent: 0px;
+    background-color: #b3acac;
+    width: 95%;
 }
