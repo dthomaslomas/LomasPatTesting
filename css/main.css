@@ -130,3 +130,13 @@ hr {
     border: none;
     margin: 10px 0 4px 0;
 }
+#text-li {
+	font-weight: bold;
+    padding: 0px 0px 6px 16px;
+    color: #7fc445;
+    font-size: 13px;
+    line-height: 16px
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
