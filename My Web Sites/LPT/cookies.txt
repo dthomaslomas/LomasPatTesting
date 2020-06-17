@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.lomaspattesting.co.uk	TRUE	/	FALSE	1999999999	CMSSESSID3de7864f	8suitb4n9gh82ajoejgonqd4k5
+www.lomaspattesting.co.uk	TRUE	/	FALSE	1999999999	BIGipServerZebedee	106997952.20480.0000
+www.lomaspattesting.co.uk	TRUE	/	FALSE	1999999999	TS01237438	01700654a6dbac089c5de72832b23dad7575a3ac209a54388fec9eb08f7ad74106f1356be7da97fd224ae0a41447936ec374aba39f
+
