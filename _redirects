@@ -1,8 +1,14 @@
 # Redirects from what the browser requests to what we serve
 /index.php                  /
+/index.php/about-us         /about-us
 /about-us.html              /about-us
+/index.php/services         /services
 /services.html              /services
+/index.php/no-charge        /no-charge
 /no-charge.html             /no-charge
+/index.php/loyalty-packages /loyalty-packages
 /loyalty-packages.html      /loyalty-packages
+/index.php/legal            /legal
 /legal.html                 /legal
+/index.php/contact-us       /contact-us
 /contact-us.html            /contact-us
