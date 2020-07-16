@@ -5,7 +5,7 @@
 	}
 	
 body {
-	background: #000 url(images/cms/site_tile.jpg) repeat-x;
+	background: #000 url("/images/site_tile.jpg") repeat-x;
 	font-family: Arial, sans-serif;
 	}
 	
@@ -15,7 +15,7 @@ body {
 	}
 	
 #logo a {
-	background: url(images/cms/logo.jpg) no-repeat;
+	background: url("/images/logo.jpg") no-repeat;
 	display:block;
 	width:260px;
 	height:170px;
@@ -99,7 +99,7 @@ font-weight:bold;
 }
 	
 #telephone {
-	background: url(images/cms/telephone.jpg) no-repeat;
+	background: url("/images/telephone-header.jpg") no-repeat;
 	display:block;
 	width:640px;
 	height:170px;
@@ -136,7 +136,7 @@ padding:0 0 0 20px;
 	}
 	
 #offers {
-	background: url(images/cms/special_offers_header.jpg) top left no-repeat;
+	background: url("/images/special_offers_header.jpg") top left no-repeat;
 	width:212px;
 padding: 0px 20px 20px 20px;
 	float:left;
@@ -169,7 +169,7 @@ display:none;
 div.home {
 	width:900px;
 height:435px;
-	background: url(images/cms/home_main_message.jpg) no-repeat;
+	background: url("/images/home_main_message.jpg") no-repeat;
 }
 
 div.home p {
@@ -180,7 +180,7 @@ div.home p {
 div.about_us {
 	width:900px;
 height:435px;
-	background: url(images/cms/about_us_main_message.jpg) no-repeat;
+	background: url("/images/about_us_main_message.jpg") no-repeat;
 }
 
 div.about_us p {
@@ -191,7 +191,7 @@ div.about_us p {
 div.services {
 	width:900px;
 height:435px;
-	background: url(images/cms/services_main_message.jpg) no-repeat;
+	background: url("/images/services_main_message.jpg") no-repeat;
 }
 
 div.services p {
@@ -202,7 +202,7 @@ div.services p {
 div.no_charge {
 	width:900px;
 height:435px;
-	background: url(images/cms/no_charge_main_message.jpg) no-repeat;
+	background: url("/images/no_charge_main_message.jpg") no-repeat;
 }
 
 div.no_charge p {
@@ -213,7 +213,7 @@ div.no_charge p {
 div.loyalty_packages {
 	width:900px;
 height:435px;
-	background: url(images/cms/loyalty_packages_main_message.jpg) no-repeat;
+	background: url("/images/loyalty_packages_main_message.jpg") no-repeat;
 }
 
 div.loyalty_packages p {
@@ -225,7 +225,7 @@ text-align:right;
 div.legal {
 	width:900px;
 height:435px;
-	background: url(images/cms/legal_main_message.jpg) no-repeat;
+	background: url("/images/legal_main_message.jpg") no-repeat;
 }
 
 div.legal p {
@@ -237,7 +237,7 @@ text-align:right;
 div.contact_us {
 	width:900px;
 height:435px;
-	background: url(images/cms/contact_us_main_message.jpg) no-repeat;
+	background: url("/images/contact_us_main_message.jpg") no-repeat;
 }
 
 p.copyright {
@@ -281,7 +281,7 @@ padding: 4px 0 10px 0;
 }
 
 #text li {
-background: url(images/cms/bullet.jpg) 0px 3px no-repeat;
+background: url("/images/bullet.jpg") 0px 3px no-repeat;
 font-weight:bold;
 list-style-type:none;
 padding: 0px 0px 6px 16px;
@@ -375,4 +375,165 @@ font-weight: normal;
 color:#666666;
 }
 /* End of 'LPT - Layout' */
+
+
+
+/* Start of CMSMS style sheet 'FormBuilder Default Style' */
+/* Sample FormBuilder CSS base */
+form {margin-top:0;}
+form, td, th, li { font-size: 12px}
+form div {margin-bottom:0}
+fieldset div {margin-bottom:0.5em;
+}
+fieldset div div {
+	margin-top:0.5em;
+}
+fieldset {
+border:none;
+}
+fieldset label {
+	width:100px;
+margin-top:0px;
+margin-bottom:10px;
+}
+legend {
+visibility:hidden;
+height: 0px;
+}
+textarea {
+	height: 6em
+}
+
+/* Apply this class to text/select input fields with shorter labels
+	to help alignment */
+.short-label label {float:left; width:10em}
+.short-label fieldset div input,
+.short-label fieldset div select {width:16em}
+
+/* Pretty up your Captcha image output */
+.captcha {
+	margin:0.5em 0;
+	width:100px;
+	text-align:center
+}
+.captcha img {border:1px solid #F60; margin-bottom:0.5em}
+.captcha input {width:196px; margin-top:0.5em}
+
+/* Just a bit more room for the Submit button */
+.submit {margin-top:0.5em}
+
+/* Apply this class to text/select input fields with shorter labels
+	to help alignment */
+.short-label label {float:left; width:10em}
+.short-label fieldset div input,
+.short-label fieldset div select {width:16em}
+
+/* Pretty up your Captcha image output */
+.captcha {
+	margin:0.5em 0;
+	width:100px;
+	text-align:center
+}
+.captcha img {border:1px solid #F60; margin-bottom:0.5em}
+.captcha input {width:196px; margin-top:0.5em}
+
+
+.contactform input {width: 190px; float:right;margin-bottom:10px;}
+.contactform input.checkbox {border: none;}
+.contactform label {
+	display: block;
+	float: left;
+	width: 130px;
+}
+.contactform label.label {
+	display: inline;
+	float: none;
+	width: 50px;
+	font-size: 10px;
+}
+.contactform textarea {
+font-size:12px;
+border: 1px solid #CBC9CA;
+	background-color: #ffffff;
+width: 340px;
+font-family: 'M1cregular', Arial, Helvetica, sans-serif;
+}
+
+/* Just a bit more room for the Submit button */
+.submit {
+float:right;
+}
+
+.submit input {
+width:100px;
+}
+
+.formbuilderform .message {
+font-size:12px;
+	line-height: 16px;
+	padding: 0 0 8px 0;
+}
+/* End of 'FormBuilder Default Style' */
+
+
+
+/* Start of CMSMS style sheet 'LPT - Navigation' */
+/********************
+MENU
+*********************/
+#menu_hori {
+	background: url("/images/menu_tile.html") repeat-x;
+	width:900px;
+	height:42px;
+clear:both;
+}
+
+#menu_hori li {
+float:left;
+	text-transform:uppercase;
+list-style-type:none;
+}
+
+/** fix stupid ie bug with display:block; **/
+* html #menu_hori li a { height: 1%; } 
+* html #menu_hori li hr { height: 1%; }
+/** end fix **/
+
+/* first level links */
+div#menu_hori a {
+float:left;
+	height:28px;
+	text-decoration:none;
+	color:#CCC;
+display:block;
+	padding: 14px 17px 0 17px;
+	font-weight:bold;
+	font-size: 16px;
+	line-height: 14px;
+}
+
+/* hover state for links - level 01 */
+div#menu_hori a:hover {
+   color: #FFFFFF;
+display:block;
+}
+
+/* 
+current pages in the default Menu Manager 
+template are unclickable. This is for current page on first level 
+*/
+div#menu_hori ul h3 {
+display:block;
+color: #FFFFFF;
+   background: #7fc445 url("/images/menu_selected_corner.jpg") no-repeat bottom right;
+	height:28px;
+	text-decoration:none;
+display:block;
+	padding: 14px 17px 0px 17px;
+	font-weight:bold;
+	font-size: 16px;
+	line-height: 14px;
+}
+
+/* End of 'LPT - Navigation' */
 
