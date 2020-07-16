@@ -482,7 +482,7 @@ font-size:12px;
 MENU
 *********************/
 #menu_hori {
-	background: url("/images/menu_tile.html") repeat-x;
+	/* background: url("/images/menu_tile.jpg") repeat-x; */
 	width:900px;
 	height:42px;
 clear:both;
@@ -525,7 +525,7 @@ template are unclickable. This is for current page on first level
 div#menu_hori ul h3 {
 display:block;
 color: #FFFFFF;
-   background: #7fc445 url("/images/menu_selected_corner.jpg") no-repeat bottom right;
+   background: #7fc445 url("/images/menu_selected_corner.jpg") no-repeat bottom right -2px;
 	height:28px;
 	text-decoration:none;
 display:block;
