@@ -52,32 +52,25 @@
 <p> </p>
 <p> </p>
 <p> </p>
-<!-- <div id="contactform">
+<div id="contactform">
 				
-		<form id="cntnt01moduleform_1" method="post" action="http://www.lomaspattesting.co.uk/index.php/contact-us" class="cms_form" enctype="multipart/form-data">
-<div class="hidden">
-<input type="hidden" name="mact" value="FormBuilder,cntnt01,default,0" />
-<input type="hidden" name="cntnt01returnid" value="21" />
-<input type="hidden" name="cntnt01fbrp_callcount" value="1" />
-</div>
-
-	<div><input type="hidden" id="cntnt01form_id" name="cntnt01form_id" value="2" />
-<input type="hidden" id="cntnt01fbrp_continue" name="cntnt01fbrp_continue" value="2" />
-<input type="hidden" id="cntnt01fbrp_done" name="cntnt01fbrp_done" value="1" />
-</div>
+		<form id="cntnt01moduleform_1" onSubmit="submitForm(event)" class="cms_form" >
+			<input type="text" id="trap" value="" hidden/>
 	<div  class="contactform">
 	<fieldset id="fbrp__13"><legend>Contact</legend>
-			<div class="clearfix required"><label for="fbrp__14">Contact Name*</label><input type="text" name="cntnt01fbrp__14" value="" size="25" maxlength="128"  id="fbrp__14" />
+			<div class="clearfix required"><label for="fbrp__14">Contact Name*</label><input required id="name" type="text" name="cntnt01fbrp__14" value="" size="25" maxlength="128"  id="fbrp__14" />
 </div>
-     				        	<div class="clearfix required"><label for="fbrp__29">Business Name*</label><input type="text" name="cntnt01fbrp__29" value="" size="25" maxlength="80"   id="fbrp__29" />
+     				        	<div class="clearfix required"><label for="fbrp__29">Business Name*</label><input required id="businessname" type="text" name="cntnt01fbrp__29" value="" size="25" maxlength="80"   id="fbrp__29" />
 </div>
-     				        	<div class="clearfix required"><label for="fbrp__15">Email Address*</label><input type="text" name="cntnt01fbrp__15[]"  id="fbrp__15_1" value="" size="25" maxlength="128" /></div>
+     				        	<div class="clearfix required"><label for="fbrp__15">Email Address*</label><input required id="email" type="text" name="cntnt01fbrp__15[]"  id="fbrp__15_1" value="" size="25" maxlength="128" /></div>
      				        	
-     				        	<div class=" clearfix required"><label for="fbrp__30">Telephone (optional)</label><input type="text" name="cntnt01fbrp__30" value="" size="25" maxlength="80"   id="fbrp__30" />
+     				        	<div class=" clearfix required"><label for="fbrp__30">Telephone (optional)</label><input id="number" type="text" name="cntnt01fbrp__30" value="" size="25" maxlength="80"   id="fbrp__30" />
 </div>
-     				        	<div class="clearfix required"><label for="fbrp__17">Subject*</label><input type="text" name="cntnt01fbrp__17" value="" size="25" maxlength="128"  id="fbrp__17" />
+								<div class=" clearfix required"><label for="fbrp__30">Location (optional)</label><input id="location" type="text" name="cntnt01fbrp__30" value="" size="25" maxlength="80"   id="fbrp__30" />
 </div>
-     				        	<div class="clearfix required clearfix message"><label for="message">Message*</label><textarea name="cntnt01fbrp__18" cols="60" rows="5" class="cms_textarea" id="message">Enter Your Message Here</textarea>
+     				        	<div class="clearfix required"><label for="fbrp__17">Subject*</label><input required type="text" id="subject" name="cntnt01fbrp__17" value="" size="25" maxlength="128"  id="fbrp__17" />
+</div>
+     				        	<div class="clearfix required clearfix message"><label for="message">Message*</label><textarea required id="message" name="cntnt01fbrp__18" cols="60" rows="5" class="cms_textarea" id="message" placeholder="Enter Your Message Here"></textarea>
 </div>
      							        	</fieldset>
      				<div class="submit"><input class="cms_submit fbsubmit" name="cntnt01fbrp_submit" id="cntnt01fbrp_submit" value="Submit" type="submit"  /></div>
@@ -86,7 +79,7 @@
 
 
 
-</div> -->
+</div>
 </div><div class="clearfix"></div></div><div id="offers"><h2>Special Offers</h2>
 <h3>Spring special</h3>
 <p>Get an extra 5% off year three of your loyalty package price. Don't miss this. Call now for a free, no obligation site survey.</p>
@@ -103,37 +96,42 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    let formData = {
-		"name": "Dan Lomas Live Site",
-		"email": "dan@gmail.com",
-		"subject": "Pat test",
-		"businessname": "my prism",
-		"telephone": "0191 675 2736",
-		"location": "Oldham",
-		"message": "Test"
-	};
- 
-	$.ajax( {
-		type:"POST", 
-		data: JSON.stringify(formData), 
-		contentType:"application/json; charset=utf-8",
-		dataType:"json",
-		url:"https://dva23vxcsl.execute-api.eu-west-1.amazonaws.com/prod", success: function(data, status) {
-			// document.getElementById("name").value = "";
-			// document.getElementById("email").value = "";
-			// document.getElementById("telephone").value = "";
-			// document.getElementById("location").value = "";
-			// document.getElementById("message").value = "";
-			// $('#contact-form #success').fadeIn();
-			console.log(status)
+	function submitForm(event){
+		event.preventDefault();
+		if(document.getElementById("trap").value.length == 0){
+			let formData = {
+				"name": document.getElementById("name").value,
+				"email": document.getElementById("email").value,
+				"subject": document.getElementById("subject").value,
+				"businessname": document.getElementById("businessname").value,
+				"telephone": document.getElementById("number").value,
+				"location": document.getElementById("location").value,
+				"message": document.getElementById("message").value
+			};
+		
+			$.ajax( {
+				type:"POST", 
+				data: JSON.stringify(formData), 
+				contentType:"application/json; charset=utf-8",
+				dataType:"json",
+				url:"https://u8802yeszl.execute-api.eu-west-1.amazonaws.com/Prod/", success: function(data, status) {
+					document.getElementById("name").value = "";
+					document.getElementById("email").value = "";
+					document.getElementById("subject").value = "";
+					document.getElementById("businessname").value = "";
+					document.getElementById("number").value = "";
+					document.getElementById("location").value = "";
+					document.getElementById("message").value = "";
+					console.log(status)
+				}
+				, error: function(status) {
+					console.log("Error", status)
+					
+				}
+			});
 		}
-		, error: function(status) {
-			console.log("Error", status)
-			
-		}
-	});
 
-
+	}
 	
 </script>
   </body>
