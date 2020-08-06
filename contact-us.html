@@ -54,7 +54,7 @@
 <p> </p>
 <div id="contactform">
 				
-		<!-- <form id="cntnt01moduleform_1" method="post" action="http://www.lomaspattesting.co.uk/index.php/contact-us" class="cms_form" enctype="multipart/form-data">
+		<form id="cntnt01moduleform_1" method="post" action="http://www.lomaspattesting.co.uk/index.php/contact-us" class="cms_form" enctype="multipart/form-data">
 <div class="hidden">
 <input type="hidden" name="mact" value="FormBuilder,cntnt01,default,0" />
 <input type="hidden" name="cntnt01returnid" value="21" />
@@ -82,7 +82,9 @@
      							        	</fieldset>
      				<div class="submit"><input class="cms_submit fbsubmit" name="cntnt01fbrp_submit" id="cntnt01fbrp_submit" value="Submit" type="submit"  /></div>
 	</div>
-	</form> -->
+	</form>
+
+
 
 </div>
 </div><div class="clearfix"></div></div><div id="offers"><h2>Special Offers</h2>
@@ -99,6 +101,34 @@
 <div class="clearfix"></div></div>
 <div id="footer"><p class="copyright">© Copyright 2011, Lomas Portable Appliance Testing. All rights reserved</p></div>
 </div>
-  </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    let formData = {
+		name: "Dan Lomas Site",
+		email: "dan@gmail.com",
+		subject: "Pat test",
+		businessname: "my prism",
+		telephone: "0191 675 2736",
+		location: "Oldham",
+		message: "Test"
+	};
+ 
+	const encodeForm = (data) => {
+	return Object.keys(data)
+		.map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+		.join('&');
+	}
+	
+	axios.post(' https://u8802yeszl.execute-api.eu-west-1.amazonaws.com/Prod/', encodeForm(formData), {headers: {'Content-Type': 'application/x-www-form-urlencoded' }})
+		.then(function (response) {
+			console.log(response);
+		})
+		.catch(function (error) {
+			console.log(error);
+	});
 
+
+	
+</script>
+  </body>
 </html>
